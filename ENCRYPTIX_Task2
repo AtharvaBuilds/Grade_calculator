@@ -1,0 +1,51 @@
+//TASK2
+package Encryptix;
+
+import java.util.Scanner;
+
+public class Student_grade_calculator {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.print("\n Enter Maths marks(out of 100) : ");
+		int maths=sc.nextInt();
+		System.out.print("\n Enter Physics marks(out of 100) : ");
+		int physics=sc.nextInt();
+		System.out.print("\n Enter Chemistry marks(out of 100) : ");
+		int chemistry=sc.nextInt();
+		int totalMarks=maths+physics+chemistry;
+		System.out.print("\n Total Marks = "+totalMarks);
+		float averagepercentage=(totalMarks/3);
+		System.out.print("\n Average Percentage = "+averagepercentage);
+		if(averagepercentage>90)
+		{
+			System.out.print("\n A Grade ");
+		}
+		else if(averagepercentage>80)
+		{
+			System.out.print("\n B Grade ");
+		}
+		else if(averagepercentage>70)
+		{
+			System.out.print("\n C Grade ");
+		}
+		else if(averagepercentage>60)
+		{
+			System.out.print("\n D Grade ");
+		}
+		else if(averagepercentage>40 && averagepercentage<60)
+		{
+			System.out.print("\n E Grade ");
+		}
+		else
+		{
+			System.out.print("\n Fail...  Study Hard!!");
+		}
+		
+
+	}
+
+}
+
+
+
